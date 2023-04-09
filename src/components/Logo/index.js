@@ -1,10 +1,23 @@
 import { Text, View, StyleSheet } from "react-native";
-
+import {View as ViewMoti} from 'moti'
 export default function Logo() {
   return (
-    <View style={styles.logoArea}>
+    <ViewMoti
+    from={{
+      opacity:0,
+      translateX:-50
+    }}
+    animate={{
+      opacity:1,
+      translateX:0
+    }}
+    transition={{
+      type:"spring",
+      duration:800
+    }}
+    style={styles.logoArea}>
       <Text style={styles.logo}>Receita Fácil</Text>
-    </View>
+    </ViewMoti>
   );
 }
 

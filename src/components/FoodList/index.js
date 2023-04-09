@@ -7,7 +7,6 @@ export default function FoodList({ data }) {
   const navigation = useNavigation()
 
   function handleNavigate(){
-    // console.log(data)
     navigation.navigate('Detaill',{data:data})
   }
 
