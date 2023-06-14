@@ -27,7 +27,8 @@
     "react-native-webview": "11.26.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0"
+    "@babel/core": "^7.20.0",
+    "json-server": "^0.17.3"
   },
   "private": true
 }
